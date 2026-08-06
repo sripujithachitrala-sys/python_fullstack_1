@@ -6,12 +6,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #6b7ed3;
-    color: #913636;
+    background-color: #edf3f3;
+    color: #d2e00b;
     padding: 20px;
 }
 header{
-    background-color: #6058b9;
+    background-color: #3f2537;
     color: #fdfbfb;
     padding: 30px;
     text-align:center;
@@ -35,4 +35,82 @@ nav a{
 }
 nav a:hover{
     text-decoration: underline;
+}
+main{
+    margin:auto;
+    width: 90%;
+    margin-top: 30px;
+}
+section{
+    margin-bottom: 30px;
+    background-color: #283b2c;
+    padding: 20px;
+    border-radius: 20px;
+}
+h2{
+    color: #1490d8;
+    margin-bottom: 10px;
+}
+p{
+    color: #fdfbfb;
+    margin-bottom: 10px;
+}
+
+.banner{
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+ul{
+    list-style-type: disc;
+    margin-left: 50px;
+    padding: 10px;
+}
+li{
+    margin-bottom: 10px;
+}
+article{
+    background-color: #400fc5;
+    padding: 20px;
+    border-radius: 10px;
+}
+article:hover{
+    background-color: #f10519;
+}
+table{
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #2ba34f;
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+table, th, td{
+    border: 1px solid #070707;
+}
+tr:hover{
+    background-color: #e9c8e4;
+}
+ol{
+    margin-left: 50px;
+    padding: 10px;
+}
+ol li{
+    margin-bottom: 10px;
+}
+form{
+    margin-top: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 2px;
+    font-weight: hold;
+}
+input:not([type="submit"]):not([type="radio"]) {
+    width
+
+
 }
