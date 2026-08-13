@@ -106,11 +106,14 @@ form{
 }
 label{
     display: block;
-    margin-bottom: 2px;
-    font-weight: hold;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 input:not([type="submit"]):not([type="radio"]) {
-    width
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #fdfbfb;
 
 
 }
