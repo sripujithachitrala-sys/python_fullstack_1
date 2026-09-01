@@ -1,6 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request,redirect,url_for,jsonify,session,sqlite3
 
 app=Flask(__name__)
+
+app.secret_key="super_secret_key"
+
+def get_db_connection():
+    conn=sqlite3.connect("database.db")
+    conn.row_factory=sqlite3.Row #Returns rows as dicts instead of tuples
+    return conn
 
 @app.route("/")
 def home():
