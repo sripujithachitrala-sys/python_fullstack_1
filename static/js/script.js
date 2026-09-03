@@ -19,7 +19,26 @@ if(registerForm){
         if (name == "" || email == "" || password == "" || date == "" || gender == "" || course == "") {
             alert("Please fill all the fields");
         } else {
-           alert("Registration successful"); 
+            fetch("/api/register",{
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    password: password,
+                    date: date,
+                    gender: gender,
+                    course: course
+                })
+            })
+            .then(response=> response.json())
+            .then(data=> {
+                alert(data.message);
+                window.location.href="/login";
+            });
+           alert("Registration successful");
         }
         
     }
@@ -35,6 +54,21 @@ if(loginForm){
         if (email == "" || password == "") {
             alert("Please fill all the fields");
         } else {
+            fetch("/api/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringfy({
+                    email: email,
+                    password: password
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    window.location.href = "/";
+                }),
            alert("Login successful"); 
         }
         
